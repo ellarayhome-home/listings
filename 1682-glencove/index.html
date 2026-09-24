@@ -179,6 +179,11 @@ box-shadow:var(--shadow);letter-spacing:.01em}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta{color:#0b1410}}
 .cta-alt{background:transparent;color:var(--accent);border:2px solid var(--accent);box-shadow:none;margin-top:0}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-alt{color:var(--accent)}}
+
+td a.comp{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 38%,transparent);
+font-weight:600;white-space:nowrap}
+td a.comp:hover{border-bottom-color:var(--accent)}
+td a.comp::after{content:"\2197";font-size:10px;margin-left:3px;vertical-align:super;opacity:.6}
 footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.6}
 
 /* ---------- STICKY BAR ---------- */
@@ -340,17 +345,17 @@ Bath count is not carried in the county record.</p>
 <p>Eight sold comps in this pocket of 32907, every one of them 3 bed / 2 bath, within a mile:</p>
 <table>
   <tr><th>Address</th><th>SF</th><th>$/SF</th><th>Price</th><th>Sold</th><th>Built</th></tr>
-  <tr><td>1733 Zaminder St NW</td><td>1,729</td><td>$223</td><td>$385,000</td><td>7/2026</td><td>1988</td></tr>
-  <tr><td>1692 Carbondale Ave NW</td><td>1,816</td><td>$202</td><td>$367,000</td><td>6/2026</td><td>1998</td></tr>
-  <tr><td>1604 Carbondale Ave NW</td><td>1,864</td><td>$185</td><td>$345,000</td><td>7/2026</td><td>1988</td></tr>
-  <tr><td>1709 Zaminder St NW</td><td>1,876</td><td>$183</td><td>$343,000</td><td>2/2026</td><td>1987</td></tr>
-  <tr><td>1796 Lambton St NW</td><td>1,884</td><td>$170</td><td>$320,000</td><td>6/2026</td><td>1990</td></tr>
-  <tr class="divider"><td>1601 Kanabec Ave</td><td>2,052</td><td>$157</td><td>$323,000</td><td>3/2026</td><td>1994</td></tr>
-  <tr><td>1778 Parrsboro St NW</td><td>1,971</td><td>$146</td><td>$287,000</td><td>6/2026</td><td>1995</td></tr>
-  <tr><td>1354 Madoc St NW</td><td>1,773</td><td>$116</td><td>$206,000</td><td>8/2026</td><td>1990</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1733-Zaminder-St-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1733 Zaminder St NW</a></td><td>1,729</td><td>$223</td><td>$385,000</td><td>7/2026</td><td>1988</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1692-Carbondale-Ave-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1692 Carbondale Ave NW</a></td><td>1,816</td><td>$202</td><td>$367,000</td><td>6/2026</td><td>1998</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1604-Carbondale-Ave-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1604 Carbondale Ave NW</a></td><td>1,864</td><td>$185</td><td>$345,000</td><td>7/2026</td><td>1988</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1709-Zaminder-St-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1709 Zaminder St NW</a></td><td>1,876</td><td>$183</td><td>$343,000</td><td>2/2026</td><td>1987</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1796-Lambton-St-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1796 Lambton St NW</a></td><td>1,884</td><td>$170</td><td>$320,000</td><td>6/2026</td><td>1990</td></tr>
+  <tr class="divider"><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1601-Kanabec-Ave-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1601 Kanabec Ave</a></td><td>2,052</td><td>$157</td><td>$323,000</td><td>3/2026</td><td>1994</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1778-Parrsboro-St-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1778 Parrsboro St NW</a></td><td>1,971</td><td>$146</td><td>$287,000</td><td>6/2026</td><td>1995</td></tr>
+  <tr><td><a class="comp" href="https://www.realtor.com/realestateandhomes-detail/1354-Madoc-St-NW_Palm-Bay_FL_32907" target="_blank" rel="noopener noreferrer">1354 Madoc St NW</a></td><td>1,773</td><td>$116</td><td>$206,000</td><td>8/2026</td><td>1990</td></tr>
 </table>
-<p class="note">Same streets, same vintage, same bed and bath count &mdash; and the range runs from
-$116 to $223 a foot. That isn't noise. It's condition.</p>
+<p class="note">Tap any address to pull it up on realtor.com. Same streets, same vintage, same bed
+and bath count &mdash; and the range runs from $116 to $223 a foot. That isn't noise. It's condition.</p>
 
 <div class="states">
   <div class="state">
