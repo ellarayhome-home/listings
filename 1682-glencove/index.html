@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>1682 Glencove Ave NW</title>
+<style>
+:root{
+--bg:#faf9f7; --surface:#fff; --line:#e4e1db; --ink:#1a1917; --muted:#6b6862;
+--accent:#1f4d3d; --accent-soft:#eef4f1; --warn:#8a3a12; --warn-soft:#fdf2ec;
+--radius:10px;
+}
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]){
+--bg:#141513; --surface:#1d1f1c; --line:#33362f; --ink:#f0eee9; --muted:#a3a096;
+--accent:#7fc4a6; --accent-soft:#1c2a24; --warn:#e9a06b; --warn-soft:#2b1f16;
+}}
+:root[data-theme="dark"]{
+--bg:#141513; --surface:#1d1f1c; --line:#33362f; --ink:#f0eee9; --muted:#a3a096;
+--accent:#7fc4a6; --accent-soft:#1c2a24; --warn:#e9a06b; --warn-soft:#2b1f16;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-text-size-adjust:100%}
+.wrap{max-width:660px;margin:0 auto;padding:0 16px 72px}
+header{padding:40px 0 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:650;margin:0 0 10px}
+h1{font-size:clamp(25px,6.4vw,34px);line-height:1.18;margin:0 0 6px;letter-spacing:-.02em;font-weight:680}
+.sub{color:var(--muted);margin:0;font-size:15px}
+h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+font-weight:650;margin:38px 0 12px}
+p{margin:0 0 14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 6px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+.row:last-child{border-bottom:none}
+.row dt{color:var(--muted);margin:0;flex:1 1 auto}
+.row dd{margin:0;font-variant-numeric:tabular-nums;font-weight:600;text-align:right;white-space:nowrap}
+dl{margin:0}
+.total{background:var(--accent-soft);margin:6px -18px 0;padding:16px 18px;border-radius:0 0 var(--radius) var(--radius);
+display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid var(--line)}
+.total dt{font-weight:650;font-size:15px;color:var(--ink)}
+.total dd{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em;margin:0}
+.note{font-size:13.5px;color:var(--muted);margin:10px 2px 0}
+.how{counter-reset:s;list-style:none;padding:0;margin:0}
+.how li{counter-increment:s;position:relative;padding:0 0 16px 40px;font-size:15.5px}
+.how li::before{content:counter(s);position:absolute;left:0;top:1px;width:26px;height:26px;border-radius:50%;
+background:var(--accent-soft);color:var(--accent);font-size:13px;font-weight:700;
+display:flex;align-items:center;justify-content:center}
+.flag{background:var(--warn-soft);border:1px solid var(--line);border-left:3px solid var(--warn);
+border-radius:var(--radius);padding:16px 18px;margin:0 0 14px}
+.flag h3{margin:0 0 8px;font-size:15px;font-weight:650;color:var(--warn)}
+.flag ul{margin:0;padding-left:19px}
+.flag li{margin-bottom:7px;font-size:14.5px}
+table{width:100%;border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;white-space:nowrap}
+th,td{text-align:left;padding:10px 14px 10px 0;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+td{font-variant-numeric:tabular-nums}
+.cta{display:block;background:var(--accent);color:var(--bg);text-decoration:none;text-align:center;
+padding:16px;border-radius:var(--radius);font-weight:650;font-size:16px;margin:12px 0 10px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta{color:#10120f}}
+.cta-alt{background:transparent;color:var(--accent);border:1.5px solid var(--accent);margin-top:0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-alt{color:var(--accent)}}
+:root[data-theme="dark"] .cta-alt{color:var(--accent)}
+
+.hero{margin:22px 0 4px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface)}
+.hero img{display:block;width:100%;height:auto}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0 6px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}}
+.grid button{padding:0;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--surface);
+cursor:pointer;aspect-ratio:4/3;display:block}
+.grid img{width:100%;height:100%;object-fit:cover;display:block}
+#lb{position:fixed;inset:0;background:rgba(10,11,10,.95);display:none;z-index:99;
+flex-direction:column;align-items:center;justify-content:center;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:78vh;object-fit:contain;border-radius:8px}
+#lbcap{color:#f0eee9;font-size:14px;margin-top:14px;text-align:center;max-width:620px;line-height:1.45}
+#lbn{color:#a3a096;font-size:12px;margin-top:6px}
+#lb .x{position:absolute;top:14px;right:16px;background:none;border:none;color:#f0eee9;font-size:30px;
+cursor:pointer;line-height:1;padding:8px;font-family:inherit}
+#lb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.12);border:none;
+color:#fff;font-size:26px;cursor:pointer;padding:14px 18px;border-radius:9px;line-height:1;font-family:inherit}
+#lb .prev{left:10px}#lb .next{right:10px}
+footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Off-market &middot; Subject-to</p>
+  <h1>1682 Glencove Ave NW</h1>
+  <p class="sub">Palm Bay, FL 32907 &middot; 3 bed &middot; 1,964 sf &middot; Built 1984 &middot; Vacant</p>
+</header>
+
+<div class="hero"><img src="photos/front.webp" alt="1682 Glencove Ave NW, front elevation" width="1500" height="1000"></div>
+
+<h2>What this is</h2>
+<p>This is not a cash purchase. The existing mortgage stays in place at its current rate and
+payment, and you step into it. You control the property from closing — you rehab it, you list it,
+and when it sells the existing loan is paid off out of your proceeds like any other payoff. It's gone
+at that point and the spread is yours.</p>
+<p>You are not applying for financing and you are not qualifying for anything. You are stepping into
+a loan that already exists, at a rate that no longer does.</p>
+<p>Mechanically it's held in a trust rather than deeded straight across, and you take the
+beneficial interest. That's the part most people haven't seen before, so the short version: it
+changes nothing about what you can do with the house, and it's the structure that keeps the existing
+lender where it is. I'll walk you through it on a call.</p>
+
+<h2>The existing loan</h2>
+<div class="card">
+  <dl>
+    <div class="row"><dt>Principal balance</dt><dd>$168,245.84</dd></div>
+    <div class="row"><dt>Interest rate</dt><dd>2.875%</dd></div>
+    <div class="row"><dt>Monthly payment (PITI)</dt><dd>$1,743.30</dd></div>
+    <div class="row"><dt>Loan type</dt><dd>FHA</dd></div>
+    <div class="row"><dt>Status</dt><dd>Delinquent &mdash; reinstating at closing</dd></div>
+  </dl>
+</div>
+<p class="note">Payment includes principal, interest and escrow (taxes + insurance). Escrow portion is $948.91.</p>
+
+<h2>Your cash to close</h2>
+<div class="card">
+  <dl>
+    <div class="row"><dt>Reinstate the loan</dt><dd>$12,232</dd></div>
+    <div class="row"><dt>Cash to seller</dt><dd>$5,000</dd></div>
+    <div class="row"><dt>Assignment fee</dt><dd>$10,000</dd></div>
+    <div class="row"><dt>Closing fee, flat</dt><dd>$7,300</dd></div>
+  </dl>
+  <div class="total"><dt>Total entry</dt><dd>$34,532</dd></div>
+</div>
+<p class="note"><strong>That is the entire number.</strong> The $7,300 is one flat closing fee and
+there is nothing else &mdash; <strong>no transfer taxes, no doc stamps, no title insurance, no
+settlement or escrow fees, and no property tax proration at closing</strong>. On a cash purchase at
+this price you would be paying roughly $1,200 in doc stamps alone before title and settlement
+charges. Then it's $1,743.30/mo while you hold it. Reinstatement is quoted through the next payment date and is
+confirmed off the servicer's written reinstatement letter at closing.</p>
+
+<h2>Carry while you rehab</h2>
+<table>
+  <tr><th>Hold</th><th>Payments</th><th>Entry + carry</th></tr>
+  <tr><td>3 months</td><td>$5,230</td><td>$39,762</td></tr>
+  <tr><td>4 months</td><td>$6,973</td><td>$41,505</td></tr>
+  <tr><td>6 months</td><td>$10,460</td><td>$44,992</td></tr>
+</table>
+
+<h2>How it runs</h2>
+<ol class="how">
+  <li>You review the file and run whatever due diligence you want on the property.</li>
+  <li>We paper the assignment. Closing is handled through the trustee — there's no title company
+      in the middle and no lender approval to wait on, so this moves fast.</li>
+  <li>At closing you fund the reinstatement, the seller's cash, the assignment fee and the flat $7,300 closing fee.
+      The beneficial interest transfers to you and you have control of the property. No transfer
+      taxes, no third-party closing charges, no tax proration &mdash; the $7,300 is all of it.</li>
+  <li>You make the monthly payment, on time, every month, for as long as you hold it.</li>
+  <li>You rehab and list. At resale the existing loan is paid off from your proceeds.</li>
+</ol>
+<p class="note">Because there's no lender approval and no escrow period, this can close in days
+rather than weeks.</p>
+
+<h2>Due diligence</h2>
+<p>The property is sold strictly as-is. Inspect it on your own terms and satisfy yourself on
+condition, systems and permits before you commit — that's on you, same as any deal you buy.</p>
+<p>A full set of third-party inspection reports from licensed Florida inspectors was completed on
+this property in 2026. That packet is available for purchase if you'd rather not pay for your own
+inspections. Either way, walk it and bring whoever you want.</p>
+
+<h2>Photos</h2>
+<div class="grid">
+  <button onclick="ob(0)"><img loading="lazy" src="photos/front-t.webp" alt="Front elevation"></button>
+  <button onclick="ob(1)"><img loading="lazy" src="photos/front-angle-t.webp" alt="Front, from the street"></button>
+  <button onclick="ob(2)"><img loading="lazy" src="photos/kitchen-t.webp" alt="Kitchen — cabinets, counters, subway tile and stainless already done"></button>
+  <button onclick="ob(3)"><img loading="lazy" src="photos/living-kitchen-t.webp" alt="Living area opening to the kitchen, French doors to the deck"></button>
+  <button onclick="ob(4)"><img loading="lazy" src="photos/living-t.webp" alt="Living area"></button>
+  <button onclick="ob(5)"><img loading="lazy" src="photos/room-1-t.webp" alt="Bedroom"></button>
+  <button onclick="ob(6)"><img loading="lazy" src="photos/room-2-t.webp" alt="Bedroom"></button>
+  <button onclick="ob(7)"><img loading="lazy" src="photos/hallway-t.webp" alt="Hallway"></button>
+  <button onclick="ob(8)"><img loading="lazy" src="photos/stairs-t.webp" alt="Stairs to the second floor"></button>
+  <button onclick="ob(9)"><img loading="lazy" src="photos/yard-from-deck-t.webp" alt="Backyard from the deck"></button>
+  <button onclick="ob(10)"><img loading="lazy" src="photos/yard-t.webp" alt="Fenced backyard"></button>
+  <button onclick="ob(11)"><img loading="lazy" src="photos/rear-t.webp" alt="Rear elevation and deck"></button>
+  <button onclick="ob(12)"><img loading="lazy" src="photos/deck-t.webp" alt="Deck — needs paint"></button>
+  <button onclick="ob(13)"><img loading="lazy" src="photos/rear-yard-t.webp" alt="Yard and fire pit"></button>
+  <button onclick="ob(14)"><img loading="lazy" src="photos/side-yard-t.webp" alt="Side yard"></button>
+  <button onclick="ob(15)"><img loading="lazy" src="photos/garage-t.webp" alt="Two-car garage"></button>
+  <button onclick="ob(16)"><img loading="lazy" src="photos/laundry-t.webp" alt="Interior laundry"></button>
+  <button onclick="ob(17)"><img loading="lazy" src="photos/hvac-t.webp" alt="Air handler data plate — manufactured March 2019"></button>
+  <button onclick="ob(18)"><img loading="lazy" src="photos/water-heater-t.webp" alt="Water heater — A.O. Smith 50 gallon"></button>
+  <button onclick="ob(19)"><img loading="lazy" src="photos/door-t.webp" alt="Interior door"></button>
+</div>
+<p class="note">Tap any photo to enlarge. 20 images.</p>
+
+<h2>Public record</h2>
+<div class="card">
+  <dl>
+    <div class="row"><dt>Parcel ID</dt><dd>28-36-22-KO-2237-2</dd></div>
+    <div class="row"><dt>Lot size</dt><dd>0.26 acres</dd></div>
+    <div class="row"><dt>Structure</dt><dd>2 floors &middot; 1,210 + 754 sf</dd></div>
+    <div class="row"><dt>Garage</dt><dd>572 sf</dd></div>
+    <div class="row"><dt>Construction</dt><dd>Wood frame &middot; vinyl/alum &middot; shingle</dd></div>
+    <div class="row"><dt>Subdivision</dt><dd>Port Malabar Unit 44</dd></div>
+    <div class="row"><dt>HOA</dt><dd>None</dd></div>
+    <div class="row"><dt>2026 county market value</dt><dd>$239,610</dd></div>
+    <div class="row"><dt>Last sale (10/2020)</dt><dd>$195,000</dd></div>
+  </dl>
+</div>
+<p class="note">Source: Brevard County Property Appraiser, account 2804177, data current 9/24/2026.
+Bath count is not carried in the county record.</p>
+
+<h2>What it's worth</h2>
+<p>Four sold comps within 0.61 miles, all 3-bed, all in this pocket of 32907:</p>
+<table>
+  <tr><th>Address</th><th>SF</th><th>$/SF</th><th>Price</th><th>Sold</th><th>DOM</th></tr>
+  <tr><td>1601 Kanabec Ave</td><td>2,052</td><td>$157</td><td>$323,000</td><td>3/2026</td><td>78</td></tr>
+  <tr><td>1709 Zaminder St</td><td>1,876</td><td>$182</td><td>$343,000</td><td>2/2026</td><td>78</td></tr>
+  <tr><td>1604 Carbondale Ave NW</td><td>1,864</td><td>$185</td><td>$345,000</td><td>7/2026</td><td>176</td></tr>
+  <tr><td>1733 Zaminder St</td><td>1,729</td><td>$222</td><td>$385,000</td><td>7/2026</td><td>169</td></tr>
+</table>
+<p class="note">Two of these have pools and two don't, and it made no difference &mdash; the no-pool
+house at 1604 Carbondale sold for more per foot than the pool house at 1709 Zaminder. Don't pay for
+a pool comp here.</p>
+
+<div class="card" style="margin-top:18px">
+  <dl>
+    <div class="row"><dt>Comp range, size-adjusted</dt><dd>$323K &ndash; $347K</dd></div>
+    <div class="row"><dt>What I'd underwrite to</dt><dd>$335,000</dd></div>
+  </dl>
+</div>
+<p class="note">This house is 1,964 sf &mdash; bigger than the two $345K comps and smaller than the
+$323K one. Price per foot falls as size rises across all four, and interpolating to 1,964 sf lands
+around $177/sf. I'm giving you $335K rather than the top of the range because this is the oldest
+house in the set and the nearest comp is the cheapest one. Median days on market across the four is
+124, so plan your carry on six months, not three.</p>
+
+<h2>Next step</h2>
+<a class="cta" href="tel:+12019054848">Call &mdash; (201) 905-4848</a>
+<a class="cta cta-alt" href="sms:+12019054848">Text me</a>
+<p class="note" style="text-align:center">Walk-throughs available this week.</p>
+
+<footer>
+  <p>Ella Ray &middot; Transaction Coordination &amp; Creative Finance &middot; (201) 905-4848. This property is offered
+  strictly <strong>as-is, where-is, with all faults</strong>. No representation or warranty of any kind
+  is made as to its condition, systems, permits, or fitness for any purpose, and none should be inferred
+  from anything stated or not stated here. Buyer is solely responsible for its own inspections and due
+  diligence and should not rely on this page without independent verification. Property and loan figures
+  are drawn from public records and the loan servicer's statement as of the dates shown and will change.
+  Nothing here is an appraisal or legal, tax or investment advice. Taking over an existing mortgage does
+  not release the original borrower, and the lender retains its rights under the loan documents.</p>
+</footer>
+
+</div>
+
+<div id="lb" onclick="if(event.target.id==='lb')cl()">
+  <button class="x" onclick="cl()" aria-label="Close">&times;</button>
+  <button class="nav prev" onclick="mv(-1)" aria-label="Previous">&#8249;</button>
+  <button class="nav next" onclick="mv(1)" aria-label="Next">&#8250;</button>
+  <img id="lbi" alt="">
+  <div id="lbcap"></div><div id="lbn"></div>
+</div>
+<script>
+var P=[["front", "Front elevation"], ["front-angle", "Front, from the street"], ["kitchen", "Kitchen \u2014 cabinets, counters, subway tile and stainless already done"], ["living-kitchen", "Living area opening to the kitchen, French doors to the deck"], ["living", "Living area"], ["room-1", "Bedroom"], ["room-2", "Bedroom"], ["hallway", "Hallway"], ["stairs", "Stairs to the second floor"], ["yard-from-deck", "Backyard from the deck"], ["yard", "Fenced backyard"], ["rear", "Rear elevation and deck"], ["deck", "Deck \u2014 needs paint"], ["rear-yard", "Yard and fire pit"], ["side-yard", "Side yard"], ["garage", "Two-car garage"], ["laundry", "Interior laundry"], ["hvac", "Air handler data plate \u2014 manufactured March 2019"], ["water-heater", "Water heater \u2014 A.O. Smith 50 gallon"], ["door", "Interior door"]],i=0;
+function ob(n){i=n;document.getElementById('lb').classList.add('on');document.body.style.overflow='hidden';rd()}
+function cl(){document.getElementById('lb').classList.remove('on');document.body.style.overflow=''}
+function mv(d){i=(i+d+P.length)%P.length;rd()}
+function rd(){document.getElementById('lbi').src='photos/'+P[i][0]+'.webp';
+document.getElementById('lbi').alt=P[i][1];
+document.getElementById('lbcap').textContent=P[i][1];
+document.getElementById('lbn').textContent=(i+1)+' of '+P.length}
+document.addEventListener('keydown',function(e){
+if(!document.getElementById('lb').classList.contains('on'))return;
+if(e.key==='Escape')cl();if(e.key==='ArrowRight')mv(1);if(e.key==='ArrowLeft')mv(-1)});
+var sx=null;var lb=document.getElementById('lb');
+lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;
+if(Math.abs(d)>45)mv(d<0?1:-1);sx=null},{passive:true});
+</script>
+</body>
+</html>
