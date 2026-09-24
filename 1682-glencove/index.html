@@ -105,6 +105,19 @@ display:flex;align-items:center;justify-content:center}
 .exits p:last-child{margin-bottom:0}
 .exits .caveat{font-size:13.5px;color:var(--muted);border-left:2px solid var(--line);
 padding-left:12px;margin-top:12px}
+
+.exmath{background:var(--accent-soft);border-radius:9px;padding:14px 16px;margin:12px 0}
+.exmath dl{margin:0}
+.exmath .r{display:flex;justify-content:space-between;gap:14px;padding:7px 0;font-size:14.5px;
+border-bottom:1px solid var(--line)}
+.exmath .r:last-of-type{border-bottom:none}
+.exmath dt{margin:0;color:var(--muted);flex:1 1 auto}
+.exmath dd{margin:0;font-weight:650;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.exmath .hi{border-top:1px solid var(--line);border-bottom:none;margin-top:4px;padding-top:11px}
+.exmath .hi dt{color:var(--ink);font-weight:650}
+.exmath .hi dd{font-size:19px;color:var(--accent)}
+.exlabel{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+font-weight:650;margin:0 0 8px}
 footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
 </style>
 </head>
@@ -286,6 +299,30 @@ shortage of them in Brevard.</p>
 <p>You take a down payment, write the note above what you're paying, and keep the monthly spread
 while the 2.875% sits underneath. You exit at or above retail with no listing, no commission, and
 no 124 days on market.</p>
+
+<div class="exmath">
+  <p class="exlabel">What that looks like here</p>
+  <dl>
+    <div class="r"><dt>Sell at 10% over the $335K underwrite</dt><dd>$368,500</dd></div>
+    <div class="r"><dt>Buyer puts 10% down</dt><dd>$36,850</dd></div>
+    <div class="r"><dt>You carry the balance at 7%, 30-yr am</dt><dd>$331,650</dd></div>
+    <div class="r"><dt>Their principal &amp; interest</dt><dd>$2,206.48</dd></div>
+    <div class="r"><dt>Yours underneath</dt><dd>&minus; $794.39</dd></div>
+    <div class="r hi"><dt>Monthly spread</dt><dd>$1,412</dd></div>
+  </dl>
+</div>
+
+<p>That's about <strong>$16,900 a year</strong> in spread. And the $36,850 down payment is larger
+than your entire cash entry &mdash; you're made whole on day one and still holding a note.</p>
+
+<p>The note you hold is $331,650 against $168,246 underneath. On a five-year balloon that's roughly
+<strong>$169,000 of equity spread</strong> on top of the monthly, and about $121,600 in cash
+collected before the balloon ever comes due.</p>
+
+<p class="caveat">An illustration, not a promise &mdash; it assumes that sale price, that down
+payment and that rate. Taxes and insurance pass through on top of both payments, so the spread shown
+is principal-and-interest against principal-and-interest. Your buyer's all-in would be about $3,155
+a month, and they have to genuinely support it.</p>
 <p class="caveat">Selling owner-occupied residential on seller financing brings Dodd-Frank and the
 SAFE Act into play. It's routine &mdash; it just has to be papered correctly. This is what I do;
 I'll structure it with you.</p></li>
