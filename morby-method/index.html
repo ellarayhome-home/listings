@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Morby Method File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#faf8f5;--surface:#fff;--line:#e7e2da;--ink:#15181a;--muted:#6a7269;
+--accent:#14523f;--accent2:#b97d22;--accent-soft:#e9f1ec;
+--radius:14px;--shadow:0 1px 2px rgba(20,30,25,.04),0 8px 24px -12px rgba(20,30,25,.14);
+--display:'Fraunces',Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0e120f;--surface:#161b17;--line:#28302a;--ink:#f1efea;--muted:#98a199;
+--accent:#6fc9a3;--accent2:#e2b263;--accent-soft:#15241c;
+--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6);}}
+:root[data-theme="dark"]{
+--bg:#0e120f;--surface:#161b17;--line:#28302a;--ink:#f1efea;--muted:#98a199;
+--accent:#6fc9a3;--accent2:#e2b263;--accent-soft:#15241c;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-text-size-adjust:100%;overflow-x:hidden}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px 120px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;width:100vw;margin-left:50%;transform:translateX(-50%);
+min-height:min(62vh,500px);display:flex;align-items:flex-end;overflow:hidden;
+background:radial-gradient(120% 90% at 85% 0%,#1f6b52 0%,#123d30 45%,#0b1712 100%)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.07;
+background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);
+background-size:44px 44px}
+.hero-in{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 18px 34px;width:100%}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#e2b263;
+font-weight:700;margin:0 0 12px}
+.hero h1{font-family:var(--display);font-size:clamp(40px,11vw,68px);line-height:.98;margin:0 0 14px;
+letter-spacing:-.025em;font-weight:600;color:#fff;text-wrap:balance}
+.hero .sub{color:rgba(255,255,255,.82);margin:0;font-size:16px;font-weight:500;max-width:30em}
+.scroll-tip{margin:18px 0 0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+color:rgba(255,255,255,.55);font-weight:650}
+
+/* ---------- TYPE ---------- */
+h2{font-family:var(--display);font-size:27px;font-weight:600;letter-spacing:-.022em;color:var(--ink);
+margin:52px 0 14px;line-height:1.15;position:relative;padding-top:18px}
+h2::before{content:"";position:absolute;top:0;left:0;width:42px;height:3px;border-radius:2px;background:var(--accent)}
+p{margin:0 0 15px}
+strong{font-weight:660}
+.note{font-size:13.5px;color:var(--muted);margin:12px 2px 0;line-height:1.55}
+
+/* ---------- ROLES ---------- */
+.roles{display:grid;grid-template-columns:1fr;gap:10px;margin:18px 0 0}
+@media(min-width:560px){.roles{grid-template-columns:1fr 1fr}}
+.role{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);
+border-radius:var(--radius);padding:17px 18px;box-shadow:var(--shadow);text-decoration:none;color:inherit;
+transition:transform .18s ease,border-color .18s ease}
+.role:hover{border-color:var(--accent)}
+.role:active{transform:scale(.985)}
+.role .n{flex:0 0 auto;font-family:var(--display);font-size:15px;font-weight:600;color:var(--accent2);
+font-variant-numeric:tabular-nums;padding-top:2px}
+.role h3{margin:0 0 4px;font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.015em;line-height:1.2}
+.role p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
+.role.tc{grid-column:1/-1;background:var(--accent);border-color:var(--accent)}
+.role.tc .n{color:rgba(255,255,255,.7)}
+.role.tc h3{color:#fff}
+.role.tc p{color:rgba(255,255,255,.85)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .role.tc h3{color:#0b1410}
+:root:not([data-theme="light"]) .role.tc p,:root:not([data-theme="light"]) .role.tc .n{color:rgba(10,20,14,.75)}}
+
+/* ---------- RULES ---------- */
+.rules{counter-reset:s;list-style:none;padding:0;margin:16px 0 0}
+.rules li{counter-increment:s;position:relative;padding:0 0 18px 46px;font-size:15.5px}
+.rules li::before{content:counter(s);position:absolute;left:0;top:-1px;width:30px;height:30px;border-radius:50%;
+background:var(--accent);color:#fff;font-size:13px;font-weight:700;
+display:flex;align-items:center;justify-content:center;font-family:var(--display)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .rules li::before{color:#0b1410}}
+.rules b{font-weight:680}
+.rules li.wire{background:var(--accent-soft);border:1px solid var(--line);border-left:5px solid var(--accent2);
+border-radius:var(--radius);padding:18px 20px 18px 62px;margin-top:4px}
+.rules li.wire::before{left:18px;top:17px;background:var(--accent2)}
+
+/* ---------- JUMP CHIPS ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.chips a{font-size:13.5px;font-weight:650;text-decoration:none;color:var(--accent);
+border:1.5px solid var(--accent);border-radius:999px;padding:7px 14px;white-space:nowrap}
+.chips a:hover{background:var(--accent-soft)}
+
+/* ---------- CHECKLISTS ---------- */
+.list{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+box-shadow:var(--shadow);margin:14px 0 0;overflow:hidden;scroll-margin-top:16px}
+.list header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+padding:17px 20px 13px;border-bottom:1px solid var(--line)}
+.list h3{margin:0;font-family:var(--display);font-size:22px;font-weight:600;letter-spacing:-.018em}
+.list .ct{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:650;white-space:nowrap}
+.list .tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);font-weight:700;
+padding:12px 20px 0;margin:0}
+.list.tc{border-color:var(--accent)}
+.list.tc header{background:var(--accent);border-bottom-color:var(--accent)}
+.list.tc h3{color:#fff}
+.list.tc .ct{color:rgba(255,255,255,.75)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .list.tc h3{color:#0b1410}
+:root:not([data-theme="light"]) .list.tc .ct{color:rgba(10,20,14,.72)}}
+.list ul{list-style:none;margin:0;padding:6px 20px 8px}
+.list li{position:relative;padding:11px 0 11px 30px;border-bottom:1px solid var(--line);font-size:15px;line-height:1.5}
+.list li:last-child{border-bottom:none}
+.list li::before{content:"";position:absolute;left:0;top:13px;width:17px;height:17px;border-radius:5px;
+border:1.75px solid var(--accent);background:var(--accent-soft)}
+
+/* ---------- CTA / FOOTER ---------- */
+.cta{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;
+padding:18px;border-radius:var(--radius);font-weight:680;font-size:16.5px;margin:12px 0 10px;
+box-shadow:var(--shadow);letter-spacing:.01em}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta{color:#0b1410}}
+.cta-alt{background:transparent;color:var(--accent);border:2px solid var(--accent);box-shadow:none;margin-top:0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-alt{color:var(--accent)}}
+footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.6}
+footer a{color:inherit}
+
+/* ---------- STICKY BAR ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:9px;padding:11px 14px
+calc(11px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 88%,transparent);
+backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+transform:translateY(120%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.bar.up{transform:translateY(0)}
+.bar a{flex:1;text-align:center;text-decoration:none;padding:14px;border-radius:11px;
+font-weight:680;font-size:15.5px}
+.bar .call{background:var(--accent);color:#fff}
+.bar .txt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .bar .call{color:#0b1410}}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}
+.bar{transition:none}.role{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div class="hero-in">
+    <p class="eyebrow">All Day Ella Ray &middot; Morby Method</p>
+    <h1>Who does what on a Morby file</h1>
+    <p class="sub">A smooth file with everyone in the loop. Here is each party's checklist. No specific
+    order, just responsibilities.</p>
+    <p class="scroll-tip">Scroll &darr;</p>
+  </div>
+</div>
+
+<h2>The team</h2>
+<div class="roles">
+  <a class="role" href="#broker"><span class="n">01</span><div><h3>Broker</h3>
+    <p>Orders the insurance, survey, and appraisal. Main contact with the lender.</p></div></a>
+  <a class="role" href="#title"><span class="n">02</span><div><h3>Title</h3>
+    <p>Escrow, payoffs, notaries, and closing wires.</p></div></a>
+  <a class="role" href="#buyer"><span class="n">03</span><div><h3>Buyer</h3>
+    <p>Wires the EMD, gives signing times, and pays the third-party fees.</p></div></a>
+  <a class="role" href="#lender"><span class="n">04</span><div><h3>Transactional Lender</h3>
+    <p>Funds when title gives the all clear.</p></div></a>
+  <a class="role tc" href="#tc"><span class="n">TC</span><div><h3>Transaction Coordinator</h3>
+    <p>Everything runs through me. One inbox, one source of truth.</p></div></a>
+</div>
+
+<h2>Ground rules for everyone</h2>
+<ol class="rules">
+  <li><b>Title goes through the TC.</b> Please do not email title directly about the file. If title
+  reaches out, forward it to the TC.</li>
+  <li><b>Cc the TC</b> on any email to the lender or between the team.</li>
+  <li><b>Changed by text or call?</b> Email the TC what changed, same day.</li>
+  <li><b>Lender change?</b> Tell the TC right away. It changes which documents are prepared.</li>
+  <li class="wire"><b>Two sets of wires.</b> EMD and closing wiring instructions are different. Confirm
+  each by phone with title before sending funds.</li>
+</ol>
+
+<h2>Checklists</h2>
+<p>Find your role. Each list is what you own on the file.</p>
+<nav class="chips">
+  <a href="#tc">TC</a><a href="#broker">Broker</a><a href="#title">Title</a>
+  <a href="#buyer">Buyer</a><a href="#lender">Transactional Lender</a>
+</nav>
+
+<section class="list tc" id="tc">
+  <header><h3>TC</h3><span class="ct">10 items</span></header>
+  <p class="tag">Coordinates the file from contract to close</p>
+  <ul>
+    <li>Open escrow and order the title search</li>
+    <li>Work with title to clear any title issues</li>
+    <li>Follow up with title on the seller's payoffs</li>
+    <li>Request EMD wiring instructions, confirm the EMD was sent, and send the receipt to everyone</li>
+    <li>Collect the buyer's corporate docs and send them to title and the broker</li>
+    <li>Write up the seller finance contracts, get them notarized, and record them</li>
+    <li>Collect signing times and follow up with title on the notaries</li>
+    <li>Review and balance the settlement statement, and confirm the surplus with the buyer</li>
+    <li>Send the wiring forms and build the payout sheet with everyone's wiring instructions</li>
+    <li>Request funding from the transactional lender and keep everyone updated</li>
+  </ul>
+</section>
+
+<section class="list" id="broker">
+  <header><h3>Broker</h3><span class="ct">6 items</span></header>
+  <ul>
+    <li>Order the insurance, survey, and appraisal</li>
+    <li>Serve as the main contact with the lender and provide what the lender needs</li>
+    <li>If the appraisal comes in low, work with the lender to raise it</li>
+    <li>Pass the corporate docs from the TC along to the lender</li>
+    <li>Let the TC know if the lender requires in-person signing and whether they will disburse on scanbacks</li>
+    <li>Email the TC any update that happens by text or call</li>
+  </ul>
+</section>
+
+<section class="list" id="title">
+  <header><h3>Title</h3><span class="ct">7 items</span></header>
+  <ul>
+    <li>Open escrow and run the title search</li>
+    <li>Work with the TC to clear any title issues</li>
+    <li>Order payoffs for the seller's open mortgages and liens</li>
+    <li>Provide the EMD wiring instructions and the EMD receipt</li>
+    <li>Provide separate closing wiring instructions</li>
+    <li>Set up the seller and buyer notaries</li>
+    <li>Close the file and disburse funds per the settlement statement and payout sheet</li>
+  </ul>
+</section>
+
+<section class="list" id="buyer">
+  <header><h3>Buyer</h3><span class="ct">8 items</span></header>
+  <ul>
+    <li>Send the TC the buying entity's corporate docs</li>
+    <li>Tell the TC who the transactional lender is, at the start and again at clear to close</li>
+    <li>Wire the EMD</li>
+    <li>Fill out and return the wiring form</li>
+    <li>Give the TC signing times</li>
+    <li>Confirm the surplus with the TC</li>
+    <li>Pay the third-party fees for the seller finance docs (attorney, notary, recording)</li>
+    <li>Email the TC any update that happens by text or call</li>
+  </ul>
+</section>
+
+<section class="list" id="lender">
+  <header><h3>Transactional Lender</h3><span class="ct">5 items</span></header>
+  <ul>
+    <li>Let the TC know the lender's requirements up front, including whether the seller carry docs
+    must be signed first, so the proper process is followed</li>
+    <li>Fill out and return the wiring form</li>
+    <li>Confirm the wire amount</li>
+    <li>Confirm the return</li>
+    <li>Fund when title gives the all clear</li>
+  </ul>
+</section>
+
+<h2>Questions on the file</h2>
+<a class="cta" href="mailto:Ellaine@breezebayholdings.com">Email Ellaine@breezebayholdings.com</a>
+<a class="cta cta-alt" href="tel:+12019054848">Call &mdash; (201) 905-4848</a>
+
+<footer>
+  <p>All Day Ella Ray &middot; Transaction Coordination &amp; Creative Finance &middot;
+  <a href="mailto:Ellaine@breezebayholdings.com">Ellaine@breezebayholdings.com</a> &middot; (201) 905-4848.
+  This page outlines general responsibilities on a Morby Method file. It is not legal, tax or lending
+  advice, and each file's contract, title company and lender requirements control.</p>
+</footer>
+
+</div>
+
+<div class="bar" id="bar">
+  <a class="call" href="mailto:Ellaine@breezebayholdings.com">Email the TC</a>
+  <a class="txt" href="tel:+12019054848">Call</a>
+</div>
+<script>
+document.querySelectorAll('h2,.roles,.rules,.list').forEach(function(el){el.classList.add('rv')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var bar=document.getElementById('bar');
+addEventListener('scroll',function(){bar.classList.toggle('up',scrollY>window.innerHeight*0.6)},{passive:true});
+</script>
+</body>
+</html>
