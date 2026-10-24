@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>1682 Glencove Ave NW</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#faf8f5;--surface:#fff;--line:#e7e2da;--ink:#15181a;--muted:#6a7269;
+--accent:#14523f;--accent2:#b97d22;--accent-soft:#e9f1ec;--warn:#8a3a12;--warn-soft:#fdf2ec;
+--radius:14px;--shadow:0 1px 2px rgba(20,30,25,.04),0 8px 24px -12px rgba(20,30,25,.14);
+--display:'Fraunces',Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#0e120f;--surface:#161b17;--line:#28302a;--ink:#f1efea;--muted:#98a199;
+--accent:#6fc9a3;--accent2:#e2b263;--accent-soft:#15241c;--warn:#e9a06b;--warn-soft:#2b1f16;
+--shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -14px rgba(0,0,0,.6);}}
+:root[data-theme="dark"]{
+--bg:#0e120f;--surface:#161b17;--line:#28302a;--ink:#f1efea;--muted:#98a199;
+--accent:#6fc9a3;--accent2:#e2b263;--accent-soft:#15241c;--warn:#e9a06b;--warn-soft:#2b1f16;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+-webkit-text-size-adjust:100%;overflow-x:hidden}
+.wrap{max-width:680px;margin:0 auto;padding:0 18px 120px}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;width:100vw;margin-left:50%;transform:translateX(-50%);
+min-height:min(78vh,620px);display:flex;align-items:flex-end;overflow:hidden;background:#0d120f}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;
+background:linear-gradient(to top,rgba(8,12,9,.93) 0%,rgba(8,12,9,.72) 32%,rgba(8,12,9,.22) 66%,rgba(8,12,9,.35) 100%)}
+.hero-in{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:0 18px 34px;width:100%}
+.eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent2);
+font-weight:700;margin:0 0 12px}
+.hero h1{font-family:var(--display);font-size:clamp(37px,10.5vw,64px);line-height:.98;margin:0 0 14px;
+letter-spacing:-.025em;font-weight:600;color:#fff;text-wrap:balance}
+.hero .sub{color:rgba(255,255,255,.8);margin:0;font-size:15px;font-weight:500}
+.scroll-tip{margin:18px 0 0;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+color:rgba(255,255,255,.55);font-weight:650}
+
+/* ---------- STAT STRIP ---------- */
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);
+border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin:26px 0 8px;box-shadow:var(--shadow)}
+@media(min-width:560px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--surface);padding:17px 14px;text-align:center}
+.stat b{display:block;font-family:var(--display);font-size:25px;font-weight:600;letter-spacing:-.02em;
+font-variant-numeric:tabular-nums;line-height:1.1;margin-bottom:5px}
+.stat.g b{color:var(--accent)}
+.stat span{display:block;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+color:var(--muted);font-weight:650}
+
+/* ---------- TYPE ---------- */
+h2{font-family:var(--display);font-size:27px;font-weight:600;letter-spacing:-.022em;color:var(--ink);
+margin:52px 0 14px;line-height:1.15;text-transform:none;position:relative;padding-top:18px}
+h2::before{content:"";position:absolute;top:0;left:0;width:42px;height:3px;border-radius:2px;background:var(--accent)}
+p{margin:0 0 15px}
+strong{font-weight:660}
+
+/* ---------- CARDS ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+padding:20px 20px 8px;box-shadow:var(--shadow)}
+.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.row:last-child{border-bottom:none}
+.row dt{color:var(--muted);margin:0;flex:1 1 auto}
+.row dd{margin:0;font-variant-numeric:tabular-nums;font-weight:650;text-align:right;white-space:nowrap}
+dl{margin:0}
+.total{background:var(--accent);margin:8px -20px 0;padding:19px 20px;
+border-radius:0 0 var(--radius) var(--radius);display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.total dt{font-weight:650;font-size:14px;color:rgba(255,255,255,.78);letter-spacing:.06em;text-transform:uppercase}
+.total dd{font-family:var(--display);font-size:33px;font-weight:600;font-variant-numeric:tabular-nums;
+letter-spacing:-.025em;margin:0;color:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .total dt{color:rgba(10,20,14,.7)}
+:root:not([data-theme="light"]) .total dd{color:#0b1410}}
+.note{font-size:13.5px;color:var(--muted);margin:12px 2px 0;line-height:1.55}
+
+/* ---------- CALLOUT ---------- */
+.callout{background:var(--accent-soft);border:1px solid var(--line);border-left:5px solid var(--accent2);
+border-radius:var(--radius);padding:22px 24px;margin:18px 0 0}
+.callout .lead{font-family:var(--display);font-size:25px;line-height:1.16;font-weight:600;
+color:var(--accent);margin:0 0 12px;letter-spacing:-.02em}
+.callout p{font-size:16px;line-height:1.58;color:var(--ink);margin:0 0 12px}
+.callout p:last-child{margin-bottom:0}
+.nofees{display:block;font-size:17.5px;line-height:1.5;font-weight:660;margin:14px 0;color:var(--ink)}
+
+/* ---------- STEPS ---------- */
+.how{counter-reset:s;list-style:none;padding:0;margin:0}
+.how li{counter-increment:s;position:relative;padding:0 0 18px 44px;font-size:15.5px}
+.how li::before{content:counter(s);position:absolute;left:0;top:-1px;width:29px;height:29px;border-radius:50%;
+background:var(--accent);color:#fff;font-size:13px;font-weight:700;
+display:flex;align-items:center;justify-content:center;font-family:var(--display)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .how li::before{color:#0b1410}}
+
+/* ---------- TABLES ---------- */
+table{width:100%;border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;white-space:nowrap;
+-webkit-overflow-scrolling:touch}
+th,td{text-align:left;padding:11px 16px 11px 0;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:650;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase}
+td{font-variant-numeric:tabular-nums}
+tr.divider td{border-top:2px dashed var(--muted);padding-top:13px}
+
+/* ---------- TWO STATES ---------- */
+.states{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0 0}
+@media(min-width:520px){.states{grid-template-columns:1fr 1fr}}
+.state{border:1px solid var(--line);border-radius:var(--radius);padding:19px 20px;
+background:var(--surface);box-shadow:var(--shadow)}
+.state.hi{background:var(--accent);border-color:var(--accent)}
+.state .lbl{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:650;margin:0 0 7px}
+.state.hi .lbl{color:rgba(255,255,255,.75)}
+.state .amt{font-family:var(--display);font-size:35px;font-weight:600;letter-spacing:-.028em;margin:0 0 6px;
+font-variant-numeric:tabular-nums;line-height:1}
+.state.hi .amt{color:#fff}
+.state .sub2{font-size:12.5px;color:var(--muted);margin:0;line-height:1.5}
+.state.hi .sub2{color:rgba(255,255,255,.72)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .state.hi .amt{color:#0b1410}
+:root:not([data-theme="light"]) .state.hi .lbl,:root:not([data-theme="light"]) .state.hi .sub2{color:rgba(10,20,14,.72)}}
+.gapbar{margin:16px 0 0;height:13px;border-radius:7px;overflow:hidden;display:flex;border:1px solid var(--line)}
+.gapbar i{display:block;height:100%}
+.gapbar .a{background:var(--muted);flex:0 0 72.6%}
+.gapbar .b{background:var(--accent2);flex:1 1 auto}
+.gaplbl{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.08em;
+text-transform:uppercase;color:var(--muted);font-weight:650;margin-top:8px}
+.gapline{background:var(--accent-soft);border-radius:var(--radius);padding:19px 22px;margin:16px 0 0;
+font-size:17px;line-height:1.52;border:1px solid var(--line)}
+
+/* ---------- UNDERWRITE ---------- */
+.uw{background:var(--accent);border:1px solid var(--accent);border-radius:var(--radius);
+padding:28px 24px;margin:14px 0 0;box-shadow:var(--shadow);text-align:center}
+.uw .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:650;
+color:rgba(255,255,255,.78);margin:0 0 10px}
+.uw .amt{font-family:var(--display);font-size:clamp(46px,11vw,68px);font-weight:600;
+letter-spacing:-.03em;line-height:1;margin:0;color:#fff;font-variant-numeric:tabular-nums}
+.uw .sub2{font-size:15.5px;line-height:1.55;color:rgba(255,255,255,.84);margin:13px auto 0;max-width:46ch}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .uw .amt{color:#0b1410}
+:root:not([data-theme="light"]) .uw .lbl{color:rgba(10,20,14,.72)}
+:root:not([data-theme="light"]) .uw .sub2{color:rgba(10,20,14,.8)}}
+
+/* ---------- EXITS ---------- */
+.exits{list-style:none;padding:0;margin:16px 0 0;counter-reset:e}
+.exits li{counter-increment:e;background:var(--surface);border:1px solid var(--line);
+border-radius:var(--radius);padding:20px 22px;margin:0 0 12px;box-shadow:var(--shadow)}
+.exits h3{margin:0 0 10px;font-family:var(--display);font-size:21px;font-weight:600;letter-spacing:-.02em;
+display:flex;align-items:center;gap:12px;line-height:1.2}
+.exits h3::before{content:counter(e);flex:0 0 auto;width:30px;height:30px;border-radius:9px;
+background:var(--accent);color:#fff;font-size:14px;font-weight:700;
+display:flex;align-items:center;justify-content:center}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .exits h3::before{color:#0b1410}}
+.exits p{font-size:15px;line-height:1.58;margin:0 0 11px}
+.exits p:last-child{margin-bottom:0}
+.exits .caveat{font-size:13.5px;color:var(--muted);border-left:2px solid var(--line);padding-left:13px;margin-top:13px}
+.exmath{background:var(--accent-soft);border-radius:11px;padding:16px 18px;margin:14px 0}
+.exmath .r{display:flex;justify-content:space-between;gap:14px;padding:8px 0;font-size:14.5px;
+border-bottom:1px solid var(--line)}
+.exmath .r:last-of-type{border-bottom:none}
+.exmath dt{margin:0;color:var(--muted);flex:1 1 auto}
+.exmath dd{margin:0;font-weight:650;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.exmath .hi{border-top:1px solid var(--line);border-bottom:none;margin-top:5px;padding-top:12px}
+.exmath .hi dt{color:var(--ink);font-weight:650}
+.exmath .hi dd{font-family:var(--display);font-size:24px;color:var(--accent);font-weight:600}
+.exlabel{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:650;margin:0 0 9px}
+
+/* ---------- GALLERY ---------- */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:16px 0 6px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}}
+.grid button{padding:0;border:1px solid var(--line);border-radius:11px;overflow:hidden;
+background:var(--surface);cursor:pointer;aspect-ratio:4/3;display:block;transition:transform .18s ease}
+.grid button:active{transform:scale(.97)}
+.grid img{width:100%;height:100%;object-fit:cover;display:block}
+#lb{position:fixed;inset:0;background:rgba(8,10,8,.97);display:none;z-index:200;
+flex-direction:column;align-items:center;justify-content:center;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:76vh;object-fit:contain;border-radius:10px}
+#lbcap{color:#f0eee9;font-size:14.5px;margin-top:16px;text-align:center;max-width:620px;line-height:1.5}
+#lbn{color:#8c948b;font-size:12px;margin-top:7px;letter-spacing:.1em}
+#lb .x{position:absolute;top:14px;right:16px;background:none;border:none;color:#f0eee9;font-size:32px;
+cursor:pointer;line-height:1;padding:8px;font-family:inherit}
+#lb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.13);border:none;
+color:#fff;font-size:26px;cursor:pointer;padding:15px 19px;border-radius:11px;line-height:1;font-family:inherit}
+#lb .prev{left:10px}#lb .next{right:10px}
+
+/* ---------- FLAG / CTA / FOOTER ---------- */
+.flag{background:var(--warn-soft);border:1px solid var(--line);border-left:4px solid var(--warn);
+border-radius:var(--radius);padding:17px 19px;margin:0 0 14px}
+.cta{display:block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;
+padding:18px;border-radius:var(--radius);font-weight:680;font-size:16.5px;margin:12px 0 10px;
+box-shadow:var(--shadow);letter-spacing:.01em}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta{color:#0b1410}}
+.cta-alt{background:transparent;color:var(--accent);border:2px solid var(--accent);box-shadow:none;margin-top:0}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cta-alt{color:var(--accent)}}
+
+td a.comp{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 38%,transparent);
+font-weight:600;white-space:nowrap}
+td a.comp:hover{border-bottom-color:var(--accent)}
+td a.comp::after{content:"\2197";font-size:10px;margin-left:3px;vertical-align:super;opacity:.6}
+footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* ---------- STICKY BAR ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;gap:9px;padding:11px 14px
+calc(11px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 88%,transparent);
+backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
+transform:translateY(120%);transition:transform .3s cubic-bezier(.4,0,.2,1)}
+.bar.up{transform:translateY(0)}
+.bar a{flex:1;text-align:center;text-decoration:none;padding:14px;border-radius:11px;
+font-weight:680;font-size:15.5px}
+.bar .call{background:var(--accent);color:#fff}
+.bar .txt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .bar .call{color:#0b1410}}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}
+.bar{transition:none}.grid button{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <img src="photos/front.webp" alt="1682 Glencove Ave NW, Palm Bay">
+  <div class="hero-in">
+    <p class="eyebrow">Off-market &middot; Subject-to</p>
+    <h1>1682 Glencove Ave NW</h1>
+    <p class="sub">Palm Bay, FL 32907 &middot; 5 bed &middot; 3 bath &middot; 1,964 sf &middot; Built 1984 &middot; Vacant</p>
+    <p class="scroll-tip">Scroll &darr;</p>
+  </div>
+</div>
+
+<div class="stats rv">
+  <div class="stat g"><b>$40,000</b><span>Cash to step in</span></div>
+  <div class="stat"><b>2.875%</b><span>Existing rate</span></div>
+  <div class="stat"><b>$1,743</b><span>Per month</span></div>
+  <div class="stat"><b>$208,580</b><span>Debt to clear</span></div>
+</div>
+
+<h2>What this is</h2>
+<p>This is not a cash purchase. The existing mortgage stays in place at its current rate and
+payment, and you step into it. You control the property from closing — you rehab it, you list it,
+and when it sells, the existing liens are cleared out of your proceeds like any other payoff. They're
+gone at that point and the spread is yours.</p>
+<p>You are not applying for financing and you are not qualifying for anything. You are stepping into
+a loan that already exists, at a rate that no longer does.</p>
+<p>Mechanically it's held in a trust rather than deeded straight across, and you take the
+beneficial interest. That's the part most people haven't seen before, so the short version: it
+changes nothing about what you can do with the house, and it's the structure that keeps the existing
+lender where it is. I'll walk you through it on a call.</p>
+
+<h2>The existing debt</h2>
+<div class="card">
+  <dl>
+    <div class="row"><dt>Pennymac first mortgage (FHA)</dt><dd>$168,245.84</dd></div>
+    <div class="row"><dt>HUD partial claim, recorded 2022</dt><dd>$21,577.50</dd></div>
+    <div class="row"><dt>HUD partial claim, recorded 2023</dt><dd>$18,756.96</dd></div>
+  </dl>
+  <div class="total"><dt>Total to clear at resale</dt><dd>$208,580</dd></div>
+</div>
+<p class="note">The two HUD partial claims are subordinate liens from prior loan modifications.
+<strong>They carry no interest and no monthly payment</strong>, so they don't touch your carry &mdash;
+but they come due when the first mortgage is paid off or the property transfers, so budget them into
+your exit, not your hold.</p>
+
+<div class="card" style="margin-top:14px">
+  <dl>
+    <div class="row"><dt>Rate on the first</dt><dd>2.875%</dd></div>
+    <div class="row"><dt>Monthly payment (PITI)</dt><dd>$1,743.30</dd></div>
+    <div class="row"><dt>Loan type</dt><dd>FHA</dd></div>
+    <div class="row"><dt>Status</dt><dd>Delinquent &mdash; reinstating at closing</dd></div>
+  </dl>
+</div>
+<p class="note">Payment includes principal, interest and escrow (taxes + insurance). Escrow portion
+is $948.91. All three liens are recorded in Brevard County and verified by title search.</p>
+
+<h2>Your cash to close</h2>
+<div class="card">
+  <p style="margin:0 0 4px;font-size:15.5px;line-height:1.55;color:var(--muted)">Includes reinstatement, cash to seller, and assignment fees.</p>
+  <div class="total"><dt>Your entry</dt><dd>$40,000 <span style="font-size:16px;font-weight:600">+ closing costs</span></dd></div>
+</div>
+<div class="callout">
+  <p class="lead">Almost nothing else to pay.</p>
+  <p>Closing costs are a single flat fee &mdash; I'll quote it on the call. Beyond that, there is nothing:</p>
+  <span class="nofees">No transfer taxes. No doc stamps. No title insurance.<br>
+  No settlement or escrow fees. No property tax proration at closing.</span>
+  <p>On a cash purchase at this price you'd pay roughly <strong>$1,200 in doc stamps alone</strong>
+  &mdash; before title and settlement charges.</p>
+</div>
+<p class="note">Then it's $1,743.30/mo while you hold it. Reinstatement is quoted through the next
+payment date and is confirmed off the servicer's written reinstatement letter at closing.</p>
+
+<h2>Carry while you rehab</h2>
+<table>
+  <tr><th>Hold</th><th>Payments</th><th>Entry + carry</th></tr>
+  <tr><td>3 months</td><td>$5,230</td><td>$45,230</td></tr>
+  <tr><td>4 months</td><td>$6,973</td><td>$46,973</td></tr>
+  <tr><td>6 months</td><td>$10,460</td><td>$50,460</td></tr>
+</table>
+
+<h2>How it runs</h2>
+<ol class="how">
+  <li>You review the file and run whatever due diligence you want on the property.</li>
+  <li>We paper the assignment. Closing is handled through the trustee — there's no title company
+      in the middle and no lender approval to wait on, so this moves fast.</li>
+  <li>At closing you fund the reinstatement, the seller's cash, the assignment fee and closing costs.
+      The beneficial interest transfers to you and you have control of the property. No transfer
+      taxes, no third-party closing charges, no tax proration.</li>
+  <li>You make the monthly payment, on time, every month, for as long as you hold it.</li>
+  <li>You rehab and list. At resale the existing liens are paid off from your proceeds.</li>
+</ol>
+<p class="note">Because there's no lender approval and no escrow period, this can close in days
+rather than weeks.</p>
+
+<h2>Due diligence</h2>
+<p>The property is sold strictly as-is. Inspect it on your own terms and satisfy yourself on
+condition, systems and permits before you commit — that's on you, same as any deal you buy.</p>
+<p>A full set of third-party inspection reports from licensed Florida inspectors was completed on
+this property in 2026. That packet is available for purchase if you'd rather not pay for your own
+inspections. Either way, walk it and bring whoever you want.</p>
+
+<h2>Photos</h2>
+<div class="grid">
+  <button onclick="ob(0)"><img loading="lazy" src="photos/front-t.webp" alt="Front elevation"></button>
+  <button onclick="ob(1)"><img loading="lazy" src="photos/front-angle-t.webp" alt="Front, from the street"></button>
+  <button onclick="ob(2)"><img loading="lazy" src="photos/kitchen-t.webp" alt="Kitchen — cabinets, counters, subway tile and stainless already done"></button>
+  <button onclick="ob(3)"><img loading="lazy" src="photos/living-kitchen-t.webp" alt="Living area opening to the kitchen, French doors to the deck"></button>
+  <button onclick="ob(4)"><img loading="lazy" src="photos/living-t.webp" alt="Living area"></button>
+  <button onclick="ob(5)"><img loading="lazy" src="photos/room-1-t.webp" alt="Bedroom"></button>
+  <button onclick="ob(6)"><img loading="lazy" src="photos/room-2-t.webp" alt="Bedroom"></button>
+  <button onclick="ob(7)"><img loading="lazy" src="photos/hallway-t.webp" alt="Hallway"></button>
+  <button onclick="ob(8)"><img loading="lazy" src="photos/stairs-t.webp" alt="Stairs to the second floor"></button>
+  <button onclick="ob(9)"><img loading="lazy" src="photos/yard-from-deck-t.webp" alt="Backyard from the deck"></button>
+  <button onclick="ob(10)"><img loading="lazy" src="photos/yard-t.webp" alt="Fenced backyard"></button>
+  <button onclick="ob(11)"><img loading="lazy" src="photos/rear-t.webp" alt="Rear elevation and deck"></button>
+  <button onclick="ob(12)"><img loading="lazy" src="photos/deck-t.webp" alt="Deck — needs paint"></button>
+  <button onclick="ob(13)"><img loading="lazy" src="photos/rear-yard-t.webp" alt="Yard and fire pit"></button>
+  <button onclick="ob(14)"><img loading="lazy" src="photos/side-yard-t.webp" alt="Side yard"></button>
+  <button onclick="ob(15)"><img loading="lazy" src="photos/garage-t.webp" alt="Two-car garage"></button>
+  <button onclick="ob(16)"><img loading="lazy" src="photos/laundry-t.webp" alt="Interior laundry"></button>
+  <button onclick="ob(17)"><img loading="lazy" src="photos/hvac-t.webp" alt="Air handler data plate — manufactured March 2019"></button>
+  <button onclick="ob(18)"><img loading="lazy" src="photos/water-heater-t.webp" alt="Water heater — A.O. Smith 50 gallon"></button>
+  <button onclick="ob(19)"><img loading="lazy" src="photos/door-t.webp" alt="Interior door"></button>
+</div>
+<p class="note">Tap any photo to enlarge. 20 images.</p>
+
+<h2>Public record</h2>
+<div class="card">
+  <dl>
+    <div class="row"><dt>Parcel ID</dt><dd>28-36-22-KO-2237-2</dd></div>
+    <div class="row"><dt>Lot size</dt><dd>0.26 acres</dd></div>
+    <div class="row"><dt>Structure</dt><dd>2 floors &middot; 1,210 + 754 sf</dd></div>
+    <div class="row"><dt>Garage</dt><dd>572 sf</dd></div>
+    <div class="row"><dt>Construction</dt><dd>Wood frame &middot; vinyl/alum &middot; shingle</dd></div>
+    <div class="row"><dt>Subdivision</dt><dd>Port Malabar Unit 44</dd></div>
+    <div class="row"><dt>HOA</dt><dd>None</dd></div>
+    <div class="row"><dt>2026 county market value</dt><dd>$239,610</dd></div>
+    <div class="row"><dt>Annual property taxes (2025 bill)</dt><dd>$4,474.05</dd></div>
+    <div class="row"><dt>Millage</dt><dd>18.0669</dd></div>
+    <div class="row"><dt>Homestead exemption</dt><dd>None</dd></div>
+    <div class="row"><dt>Last sale (10/2020)</dt><dd>$195,000</dd></div>
+  </dl>
+</div>
+<p class="note">Source: Brevard County Property Appraiser, account 2804177, and the Brevard County
+tax bill. <strong>There is no homestead exemption on this property and assessed value already equals
+market value</strong> &mdash; so unlike most Florida purchases, your taxes don't reset upward when
+it changes hands. Taxes and insurance are escrowed inside the $1,743.30 payment.</p>
+
+<h2>What it's worth</h2>
+<p>Two numbers matter: what it's worth in the condition it's in today, and what I'm willing to put
+my name behind as the finished value.</p>
+
+<div class="state">
+  <p class="lbl">Sells as-is around</p>
+  <p class="amt">$275,000</p>
+  <p class="sub2">Current condition, before any work.</p>
+</div>
+
+<div class="uw">
+  <p class="lbl">What I underwrite it at</p>
+  <p class="amt">$335,000</p>
+  <p class="sub2">Finished value &mdash; and deliberately conservative. Pull your own comps and tell
+  me I'm low.</p>
+</div>
+
+<p class="note">This house is 1,964 sf over two floors and most of what trades around it is
+single-story, which is the one adjustment working against it. Budget six months of carry at
+$1,743.30, not three. <strong>It's also a 5 bed / 3 bath in that square footage</strong> &mdash;
+more doors than almost anything it would be measured against. Run your own numbers on what that's
+worth.</p>
+
+<h2>Possible exits</h2>
+<p>This house doesn't only work one way. Five that fit it, and what each looks like from where
+you'd be sitting.</p>
+<ol class="exits">
+
+<li><h3>Fix and flip</h3>
+<p>The straight play. Rehab it, list it, sell it. The existing liens are paid off out of your proceeds
+at closing and the spread is yours.</p>
+<p>Figure <strong>$275,000 as-is</strong> and <strong>$335,000 finished</strong>, which is where I
+underwrite it. Budget six months of carry at $1,743.30, not three.</p>
+<p class="caveat">Run this one carefully. You're clearing $208,580 of debt at resale, not $168,246,
+so the flip only works if you take it all the way to renovated condition. Priced accordingly &mdash;
+talk to me about the assignment fee.</p></li>
+
+<li><h3>BRRRR &mdash; with one warning</h3>
+<p>Rehab, rent, refinance, repeat. It works here, but read this before you plan on it:
+<strong>a refinance pays off the 2.875% loan.</strong> You'd be trading a rate that doesn't exist
+anymore for whatever investor money costs today.</p>
+<p>If the plan is to hold, the stronger version is to skip the refi entirely &mdash; rehab it, rent
+it, and leave the cheap debt in place. Your all-in payment is $1,743.30 including taxes and
+insurance. The rent side is yours to run.</p></li>
+
+<li><h3>Wrap to a homestead buyer</h3>
+<p>Sell it on seller financing to an owner-occupant who can't qualify conventionally. There is no
+shortage of them in Brevard.</p>
+<p>You take a down payment, write the note above what you're paying, and keep the monthly spread
+while the 2.875% sits underneath. You exit at or above retail with no listing, no commission, and
+no months sitting on market.</p>
+
+<div class="exmath">
+  <p class="exlabel">What that looks like here</p>
+  <dl>
+    <div class="r"><dt>Sell at 10% over the $335K underwrite</dt><dd>$368,500</dd></div>
+    <div class="r"><dt>Buyer puts 10% down</dt><dd>$36,850</dd></div>
+    <div class="r"><dt>You carry the balance at 7%, 30-yr am</dt><dd>$331,650</dd></div>
+    <div class="r"><dt>Their principal &amp; interest</dt><dd>$2,206.48</dd></div>
+    <div class="r"><dt>Yours underneath</dt><dd>&minus; $794.39</dd></div>
+    <div class="r hi"><dt>Monthly spread</dt><dd>$1,412</dd></div>
+  </dl>
+</div>
+
+<p>That's about <strong>$16,900 a year</strong> in spread. And the $36,850 down payment is larger
+than your cash entry &mdash; you're made whole at closing and still holding the note.</p>
+
+<p>The note you hold is $331,650 against <strong>$208,580</strong> underneath &mdash; the first plus
+both partial claims. On a five-year balloon that's roughly <strong>$128,800 of equity spread</strong>
+on top of the monthly, and about $121,600 in cash collected before the balloon comes due.</p>
+
+<p>This is the exit the partial claims hurt least. You never pay the debt off &mdash; you sell above it
+and collect the difference.</p>
+
+<p class="caveat">An illustration, not a promise &mdash; it assumes that sale price, that down
+payment and that rate. Taxes and insurance pass through on top of both payments, so the spread shown
+is principal-and-interest against principal-and-interest. Your buyer's all-in would be about $3,155
+a month, and they have to genuinely support it.</p>
+<p class="caveat">Selling owner-occupied residential on seller financing brings Dodd-Frank and the
+SAFE Act into play. It's routine &mdash; it just has to be papered correctly. This is what I do;
+I'll structure it with you.</p></li>
+
+<li><h3>Co-living</h3>
+<p>Rent by the room instead of by the house. <strong>Five bedrooms and three bathrooms</strong>
+across two floors on a fully fenced quarter acre &mdash; the layout is already built for it, and the
+Melbourne and Space Coast employers are a short drive.</p>
+<p>Room-by-room generally beats whole-house rent on the same asset, against the same $1,743.30
+payment.</p>
+<p class="caveat">Confirm Palm Bay's occupancy rules and the site's capacity before you count
+rooms.</p></li>
+
+<li><h3>Sober living / recovery residence</h3>
+<p>Same physical logic as co-living, different operator and a different demand curve. Five bedrooms,
+three baths, quiet residential street, large fenced yard, two floors, separable spaces.</p>
+<p>Florida runs a voluntary certification track through FARR, and recovery residences carry
+protections under the Fair Housing Act that ordinary group-housing uses don't get. If you already
+operate one, you know the economics beat a standard rental.</p>
+<p class="caveat">Same caveat as above &mdash; verify occupancy limits and site capacity first.</p></li>
+
+</ol>
+
+<h2>Next step</h2>
+<a class="cta" href="tel:+12019054848">Call &mdash; (201) 905-4848</a>
+<a class="cta cta-alt" href="sms:+12019054848">Text me</a>
+<p class="note" style="text-align:center">Walk-throughs available this week.</p>
+
+<footer>
+  <p>Ella Ray &middot; Transaction Coordination &amp; Creative Finance &middot; (201) 905-4848. This property is offered
+  strictly <strong>as-is, where-is, with all faults</strong>. No representation or warranty of any kind
+  is made as to its condition, systems, permits, or fitness for any purpose, and none should be inferred
+  from anything stated or not stated here. Buyer is solely responsible for its own inspections and due
+  diligence and should not rely on this page without independent verification. Property and loan figures
+  are drawn from public records and the loan servicer's statement as of the dates shown and will change.
+  Nothing here is an appraisal or legal, tax or investment advice. Taking over an existing mortgage does
+  not release the original borrower, and the lender retains its rights under the loan documents.</p>
+</footer>
+
+</div>
+
+<div id="lb" onclick="if(event.target.id==='lb')cl()">
+  <button class="x" onclick="cl()" aria-label="Close">&times;</button>
+  <button class="nav prev" onclick="mv(-1)" aria-label="Previous">&#8249;</button>
+  <button class="nav next" onclick="mv(1)" aria-label="Next">&#8250;</button>
+  <img id="lbi" alt="">
+  <div id="lbcap"></div><div id="lbn"></div>
+</div>
+<script>
+var P=[["front", "Front elevation"], ["front-angle", "Front, from the street"], ["kitchen", "Kitchen \u2014 cabinets, counters, subway tile and stainless already done"], ["living-kitchen", "Living area opening to the kitchen, French doors to the deck"], ["living", "Living area"], ["room-1", "Bedroom"], ["room-2", "Bedroom"], ["hallway", "Hallway"], ["stairs", "Stairs to the second floor"], ["yard-from-deck", "Backyard from the deck"], ["yard", "Fenced backyard"], ["rear", "Rear elevation and deck"], ["deck", "Deck \u2014 needs paint"], ["rear-yard", "Yard and fire pit"], ["side-yard", "Side yard"], ["garage", "Two-car garage"], ["laundry", "Interior laundry"], ["hvac", "Air handler data plate \u2014 manufactured March 2019"], ["water-heater", "Water heater \u2014 A.O. Smith 50 gallon"], ["door", "Interior door"]],i=0;
+function ob(n){i=n;document.getElementById('lb').classList.add('on');document.body.style.overflow='hidden';rd()}
+function cl(){document.getElementById('lb').classList.remove('on');document.body.style.overflow=''}
+function mv(d){i=(i+d+P.length)%P.length;rd()}
+function rd(){document.getElementById('lbi').src='photos/'+P[i][0]+'.webp';
+document.getElementById('lbi').alt=P[i][1];
+document.getElementById('lbcap').textContent=P[i][1];
+document.getElementById('lbn').textContent=(i+1)+' of '+P.length}
+document.addEventListener('keydown',function(e){
+if(!document.getElementById('lb').classList.contains('on'))return;
+if(e.key==='Escape')cl();if(e.key==='ArrowRight')mv(1);if(e.key==='ArrowLeft')mv(-1)});
+var sx=null;var lb=document.getElementById('lb');
+lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;
+if(Math.abs(d)>45)mv(d<0?1:-1);sx=null},{passive:true});
+</script>
+
+<div class="bar" id="bar">
+  <a class="call" href="tel:+12019054848">Call Ella</a>
+  <a class="txt" href="sms:+12019054848">Text</a>
+</div>
+<script>
+document.querySelectorAll('h2,.card,.callout,.exits li,.state,.uw,.stats,.grid,table').forEach(function(el){el.classList.add('rv')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var bar=document.getElementById('bar');
+addEventListener('scroll',function(){bar.classList.toggle('up',scrollY>window.innerHeight*0.75)},{passive:true});
+</script>
+</body>
+</html>
